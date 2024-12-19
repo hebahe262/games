@@ -1,0 +1,196 @@
+body{
+  font-family: cursive ;
+  background-color:#272B30;
+
+}
+
+
+
+.loading{
+ 
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.476);
+  z-index: 9999;
+  position: fixed;
+}
+
+
+
+
+.loader {
+  /* position: relative; */
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: inline-block;
+  border-top: 4px solid #FFF;
+  border-right: 4px solid transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+
+
+.loader::after {
+  content: '';  
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border-left: 4px solid #FF3D00;
+  border-bottom: 4px solid transparent;
+  animation: rotation 0.5s linear infinite reverse;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
+
+
+
+
+
+nav.nav-vv{
+  top: 22px;
+}
+.GGB{
+  object-fit: cover;
+  height: 30vh;
+  width: 100%;
+}
+
+nav .container{
+  background-color: rgb(58, 73, 123) ;
+  box-shadow: 0 0 10px rgb(0 ,0, 0,  0.7);
+  border-radius: 20px;
+  margin-top: -30px;
+  padding: 6px;
+}
+
+
+  nav.navbar .nav-link.active{
+    color: #09c;
+    transition: color 0.5s;
+}
+nav.navbar .nav-link:hover{
+  color: #09c;
+}
+
+h1{
+  font-size: 20PX;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  margin: 0;
+}
+.small{
+  width: 40px;
+
+  
+}
+.nav-link {
+  font-size: 12px;
+  font-weight: 400;
+  transition: color 0.5s ease;
+  
+  color: #fff;
+}
+.nav-link:focus, .nav-link:hover {
+  color: #fff;
+}
+/* ===================================== */
+
+.free {
+  margin-bottom: 10px;
+      
+  }
+
+  .free h4{
+   
+      color: white;
+      font-size: 14px;
+      font-weight: 500;
+
+  }
+  .platform{
+      color: #ffffff80;
+      font-size: 14px;
+      font-weight: 400;
+  }
+  
+  .foot{
+      background-color:#32383E ;
+      font-size: 11px;
+      font-weight: 700;
+  }
+
+
+  .card{
+    cursor: pointer;
+    transition: transform .5s,filter 0.5s 0.1s;
+   filter: grayscale(0.7);
+  aspect-ratio:3/3.1;
+    
+}
+.card:hover{
+  transform: scale(1.05);
+  filter: grayscale(0);
+}
+
+
+/* ================================ */
+
+
+.details{
+  background-color: #27282B;
+  height: 100vh;
+
+}
+.star h3{
+
+   font-size: 28px;
+  color: #fff;
+  font-weight: 500;
+}
+
+i{
+  font-size: 16px;
+  color: #ffffff80;
+  cursor: pointer;
+}
+  i:hover{
+      color: white;
+  }
+
+
+
+.word {
+  font-size: 28px;
+  color: #fff;
+  font-weight: 500;
+}
+.dic{
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+}
+  .loct{
+      background-color:#0DCAF0 ;
+      color: black;
+  }
+
+.more{
+  color: #fff;
+}
+.btn:hover {
+  color:white;
+}
